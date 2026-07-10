@@ -36,8 +36,24 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_native_splash: ^2.4.6
   shared_preferences: ^2.5.3
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  flutter_svg: ^2.3.0
+  intl: ^0.20.3
+  image_picker: ^1.2.2
+  path_provider: ^2.1.5
+  
 
 dev_dependencies:
+
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/mynot_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
   flutter_lints: ^5.0.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -48,17 +64,18 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 flutter_native_splash:
-  color: "#B2DBB5"
-  image: images/splash.png
+  color: "#faf9fa"
+  image: assets/images/mynot_logo.png
+  branding: assets/images/branding.png
   
   android_12:
-    image: images/splash_icon.png
-    icon_background_color: "#B2DBB5"
+    image: assets/images/splash_icon.png
+    icon_background_color: "#faf9fa"
+    branding: assets/images/branding.png
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -70,7 +87,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -84,6 +101,18 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-VariableFont_opsz,wght.ttf
+
+    - family: NotoSerif
+      fonts:
+        - asset: assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf
+
+    - family: PublicSans
+      fonts:
+        - asset: assets/fonts/PublicSans-VariableFont_wght.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
