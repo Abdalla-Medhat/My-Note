@@ -55,10 +55,3 @@ In strict alignment with the **CS50 Academic Honesty Policy regarding generative
 3. **Documentation Synthesis:** AI assistance was employed to translate the author's completed software architecture and design decisions into this standardized English `README.md` file.
 
 *Every line of code executed, database schema deployed, and architectural assembly within this repository remains the intellectual property and hands-on creation of the author, ensuring full human-driven ownership.*
-# mynote
-
- Simple notebook project with an attractive interface 
-## Getting Started
-
-More are coming soon.
-
