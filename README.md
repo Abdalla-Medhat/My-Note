@@ -11,6 +11,22 @@ Unlike simple note-taking concepts, **MyNote** implements a scalable relational 
 
 ---
 
+## Application Screenshots
+
+Here is a visual overview of the **MyNote** application interface, showcasing its clean design, user registration components, database persistence, and profile security features:
+
+| 1. Welcome & Authentication | 2. Dashboard View | 3. Rich Media Note Entry |
+|:---:|:---:|:---:|
+| <img src="assets/images/screenshots/login.png" width="220" alt="Login Screen"/> <br> *Login & Session Setup* | <img src="assets/images/screenshots/home.png" width="220" alt="Home Screen"/> <br> *Dynamic SQLite ListView Builder* | <img src="assets/images/screenshots/note_entry.png" width="220" alt="Note Management"/> <br> *Embedded Image Attachments* |
+
+| 4. User Profile Settings | 5. Native Image Picker | 6. Account Protection |
+|:---:|:---:|:---:|
+| <img src="assets/images/screenshots/settings.png" width="220" alt="Settings Screen"/> <br> *User Security Dashboard* | <img src="assets/images/screenshots/bottom_sheet.png" width="220" alt="Image Crop Menu"/> <br> *Dynamic Bottom Sheet Modal* | <img src="assets/images/screenshots/delete_dialog.png" width="220" alt="Deletion Warning Modal"/> <br> *Destructive Cascade Warning* |
+
+*(Note: Additional lifecycle workflows such as Password Updates and Account Creation follow the same precise UI design principles.)*
+
+---
+
 ## Core Features
 1. **Isolated Multi-User System:** Multiple profiles can be created locally. A dedicated session state machine ensures that users only see, update, or edit their respective notes.
 2. **Robust SQL Injection Mitigation:** To ensure high structural integrity and application safety, all database transactions are filtered utilizing Parameterized Queries (`args` lists) via SQLite placeholders, preventing structural data leaks or local process crashes.
