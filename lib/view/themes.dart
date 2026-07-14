@@ -125,6 +125,8 @@ class MyThemes {
     appBarTheme: const AppBarTheme(
       toolbarHeight: 60,
       backgroundColor: Color(0xfffaf9fa),
+      foregroundColor: Color(0xff094cb2),
+      titleTextStyle: TextStyle(color: Color(0xff094cb2)),
       elevation: 1,
       shadowColor: Color(0xfff5f3f4),
       surfaceTintColor: Colors.transparent,
@@ -216,6 +218,8 @@ class MyThemes {
       style: ElevatedButton.styleFrom(
         backgroundColor: Color(0xff094cb2),
         foregroundColor: Colors.white,
+        minimumSize: Size(88, 45),
+        maximumSize: Size(200, 60),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8), // Standard Radius (0.25rem)
         ),
@@ -247,9 +251,11 @@ class MyThemes {
     // AppBar Theme
     appBarTheme: const AppBarTheme(
       toolbarHeight: 60,
-      backgroundColor: Color(0xfffaf9fa),
+      backgroundColor: Color(0xff121314),
+      foregroundColor: Color(0xffb1c5ff),
+      titleTextStyle: TextStyle(color: Color(0xffb1c5ff)),
       elevation: 1,
-      shadowColor: Color(0xfff5f3f4),
+      shadowColor: Color(0xff1b1c1d),
       surfaceTintColor: Colors.transparent,
     ),
   );

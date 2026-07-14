@@ -52,13 +52,11 @@ class _HomeState extends State<Home> {
       ),
       appBar: AppBar(
         toolbarHeight: 60,
-        backgroundColor: Theme.of(context).colorScheme.surface,
         elevation: 1,
-        shadowColor: Theme.of(context).colorScheme.surfaceContainerLow,
         title: Text(
           "MyNote",
           style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.primary,
           ),
         ),
         actions: [

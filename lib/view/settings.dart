@@ -97,11 +97,11 @@ class _SettingsState extends State<Settings> {
           },
           icon: Icon(Icons.arrow_back),
         ),
-        iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
+        iconTheme: IconThemeData(color: Theme.of(context).colorScheme.primary),
         title: Text(
           "Settings",
           style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.primary,
           ),
         ),
         actions: [
@@ -240,7 +240,7 @@ class _SettingsState extends State<Settings> {
                                                       Icons.camera_alt_outlined,
                                                       color: Theme.of(
                                                         context,
-                                                      ).primaryColor,
+                                                      ).colorScheme.primary,
                                                     ),
                                                   ),
                                                   Text(
@@ -274,7 +274,7 @@ class _SettingsState extends State<Settings> {
                                                       Icons.photo_outlined,
                                                       color: Theme.of(
                                                         context,
-                                                      ).primaryColor,
+                                                      ).colorScheme.primary,
                                                     ),
                                                   ),
                                                   Text(
@@ -345,7 +345,7 @@ class _SettingsState extends State<Settings> {
                                                     .copyWith(
                                                       color: Theme.of(
                                                         context,
-                                                      ).primaryColor,
+                                                      ).colorScheme.primary,
                                                     ),
                                               ),
                                             ),
